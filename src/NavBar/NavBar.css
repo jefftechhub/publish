@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --textColor: #000000;
+  --mainColor: #ffffff;
+  --secondColor: #256ae5;
+  --thirdColor: #e0201a;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo h1 {
+  font-size: 2.8rem;
+  color: var(--secondColor);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 20px;
+  height: 2.7rem;
+  padding: 0;
+}
+
+.logo p {
+  text-align: center;
+  color: var(--secondColor);
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.btn {
+  padding: 0;
+  background-color: var(--thirdColor);
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  position: relative;
+  padding: 30px 0;
+}
+
+.btn a {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--textColor);
+  border: none;
+  background-color: transparent;
+  color: var(--mainColor);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.btn a:hover {
+  color: var(--secondColor);
+  transition: 0.4s ease-in-out;
+}
+
+.btn a:not(:first-child) {
+  border-left: 2px solid var(--mainColor);
+}
+
+/* loading animation */
+.loading-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--thirdColor);
+  min-height: 80px;
+  text-transform: capitalize;
+  color: var(--mainColor);
+}
+
+@media (max-width: 770px) {
+  .logo h1 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .logo p {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    padding: 20px 0;
+  }
+
+  .btn a {
+    font-size: 0.8rem;
+    padding: 1px 5px;
+  }
+}

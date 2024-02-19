@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.4s ease-in-out;
+}
+
+:root {
+  --textColor: #000000;
+  --mainColor: #ffffff;
+  --secondColor: #256ae5;
+  --thirdColor: #e0201a;
+}
+
+.content-publish {
+  padding: 50px 100px;
+  background-color: #e9e8e8;
+  --borderColor: #c6c2c2;
+}
+
+.content-publish h1 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: var(--textColor);
+}
+
+form {
+  background-color: var(--mainColor);
+  padding: 40px;
+  padding-bottom: 20px;
+  border-radius: 3px;
+}
+
+#category {
+  width: 40%;
+  display: block;
+  border: 1px solid var(--borderColor);
+  padding: 3px 10px;
+  margin: 10px 0;
+}
+
+#category:focus {
+  outline: none;
+}
+
+#category option {
+  text-transform: capitalize;
+}
+
+.content-publish label {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  border: 1px solid var(--borderColor);
+  color: var(--textColor);
+  font-size: 1rem;
+  margin: 10px 0;
+  border-radius: 3px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: 1px solid var(--borderColor);
+  color: var(--textColor);
+  font-size: 1rem;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.content-publish h2 {
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+
+#toolbar {
+  padding: 10px;
+}
+
+.textArea {
+  min-height: 100px;
+}
+.textArea img {
+  height: 400px;
+  width: 80%;
+  object-fit: cover;
+  display: block;
+  margin: 10px 0;
+}
+
+.textArea p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.ql-editor {
+  min-height: 100px;
+  font-size: 1rem;
+}
+
+.btnSubmit,
+.inner-preview button {
+  margin: 20px 0;
+  padding: 5px 30px;
+  border: none;
+  text-transform: capitalize;
+  background-color: var(--secondColor);
+  color: var(--mainColor);
+  font-size: 0.9rem;
+  border: 1px solid var(--mainColor);
+}
+
+.btnSubmit:hover,
+.inner-preview button:hover {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  border: 1px solid var(--secondColor);
+}
+
+#previewHeading {
+  text-transform: capitalize;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.preview {
+  padding: 10%;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  width: 100%;
+}
+
+.inner-preview img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.inner-preview {
+  background-color: var(--mainColor);
+  padding: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resMssg {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--mainColor);
+  height: 80px;
+  font-size: 1.1rem;
+  display: flex;
+  padding: 0 50px;
+  justify-content: center;
+  align-items: center;
+  border-top: 8px solid var(--secondColor);
+}
+
+@media (max-width: 900px) {
+  .content-publish {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content-publish {
+    padding: 40px 10px;
+    width: 100%;
+  }
+
+  .content-publish h1 {
+    font-size: 1.3rem;
+  }
+
+  form {
+    padding: 20px 10px;
+    border-radius: 2px;
+  }
+
+  .content-publish label {
+    font-size: 0.9rem;
+  }
+
+  textarea {
+    height: 90px;
+    padding: 10px;
+
+    font-size: 0.9rem;
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+
+  input {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+
+  .content-publish h2 {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+
+  #toolbar {
+    padding: 5px;
+  }
+
+  .ql-editor {
+    font-size: 0.9rem;
+  }
+
+  .btnSubmit {
+    padding: 3px 20px;
+  }
+}
